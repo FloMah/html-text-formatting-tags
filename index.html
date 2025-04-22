@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Text Formatting Tags</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .note {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #fff4e6;
+      border-left: 5px solid #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <h1>🗘️ HTML Text Formatting Tags</h1>
+  <p>This guide lists the main HTML tags used to format text, along with their purpose and usage.</p>
+
+  <h2>📊 Table of Tags and Their Purpose</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Purpose</th>
+        <th>Semantic?</th>
+        <th>Example Output</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>&lt;b&gt;</td><td>Bold (visual only)</td><td>❌</td><td><b>Bold text</b></td></tr>
+      <tr><td>&lt;strong&gt;</td><td>Important / Bold</td><td>✅</td><td><strong>Important text</strong></td></tr>
+      <tr><td>&lt;i&gt;</td><td>Italic (visual only)</td><td>❌</td><td><i>Italic text</i></td></tr>
+      <tr><td>&lt;em&gt;</td><td>Emphasis / Italic</td><td>✅</td><td><em>Emphasized text</em></td></tr>
+      <tr><td>&lt;u&gt;</td><td>Underlined</td><td>❌</td><td><u>Underlined text</u></td></tr>
+      <tr><td>&lt;mark&gt;</td><td>Highlighted / Marked</td><td>✅</td><td><mark>Marked text</mark></td></tr>
+      <tr><td>&lt;small&gt;</td><td>Smaller text</td><td>❌</td><td><small>Small text</small></td></tr>
+      <tr><td>&lt;sub&gt;</td><td>Subscript (lower text)</td><td>❌</td><td>H<sub>2</sub>O</td></tr>
+      <tr><td>&lt;sup&gt;</td><td>Superscript (upper text)</td><td>❌</td><td>E = mc<sup>2</sup></td></tr>
+      <tr><td>&lt;del&gt;</td><td>Deleted text (strikethrough)</td><td>✅</td><td><del>Old price</del></td></tr>
+      <tr><td>&lt;ins&gt;</td><td>Inserted text (underlined)</td><td>✅</td><td><ins>New content</ins></td></tr>
+      <tr><td>&lt;s&gt;</td><td>Strikethrough (non-semantic)</td><td>❌</td><td><s>Deprecated</s></td></tr>
+      <tr><td>&lt;abbr&gt;</td><td>Abbreviation w/ tooltip</td><td>✅</td><td><abbr title="HTML">HTML</abbr></td></tr>
+      <tr><td>&lt;code&gt;</td><td>Inline code (monospace)</td><td>✅</td><td><code>console.log()</code></td></tr>
+      <tr><td>&lt;pre&gt;</td><td>Preformatted text block</td><td>✅</td><td><pre>Preserves spacing/line breaks</pre></td></tr>
+      <tr><td>&lt;blockquote&gt;</td><td>Block quotation</td><td>✅</td><td><blockquote>&gt; Quoted section</blockquote></td></tr>
+      <tr><td>&lt;q&gt;</td><td>Inline quotation</td><td>✅</td><td>"Short quote"</td></tr>
+      <tr><td>&lt;cite&gt;</td><td>Work title citation</td><td>✅</td><td><cite>The Alchemist</cite></td></tr>
+      <tr><td>&lt;span&gt;</td><td>Inline container</td><td>❌</td><td><span class="red">Text</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <h2>🧾 Useful Notes and Examples</h2>
+    <ul>
+      <li><strong>Bold vs Strong:</strong><br>
+        <code>&lt;b&gt;</code> just makes text bold.<br>
+        <code>&lt;strong&gt;</code> adds semantic importance to the content.
+      </li>
+      <li><strong>Italics vs Emphasis:</strong><br>
+        <code>&lt;i&gt;</code> is purely stylistic (e.g., technical terms, foreign words).<br>
+        <code>&lt;em&gt;</code> signals emphasis in meaning, useful for screen readers.
+      </li>
+      <li><strong>Line Breaks:</strong> Use <code>&lt;br&gt;</code> to break lines in plain text emails or inside paragraphs:<br>
+        <code>Hello,&lt;br&gt;How are you today?</code>
+      </li>
+      <li><strong>Strikethrough:</strong> Use <code>&lt;del&gt;</code> when showing that content was intentionally removed.<br>
+        Use <code>&lt;s&gt;</code> for stylistic strikethroughs.
+      </li>
+      <li><strong>Highlighting:</strong> Use <code>&lt;mark&gt;</code> to draw attention to specific content (usually yellow background).</li>
+      <li><strong>Subscript/Superscript:</strong><br>
+        Subscript: H<sub>2</sub>O<br>
+        Superscript: x<sup>2</sup>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
